@@ -1,7 +1,8 @@
 from algemene_functies import mijn_functie_2
 
 def aanbieding_1(smaak, prijs, korting):
-    print(f"emmertje ijs (1 liter) in de smaak {smaak}, van {prijs} euro voor {str(prijs-(prijs*korting)) + "0"} euro.")
+    nieuwe_prijs = prijs - (prijs * korting)
+    print(f"emmertje ijs (1 liter) in de smaak {smaak}, van {prijs:.2f} euro voor {nieuwe_prijs:.2f} euro.")
 aanbieding_1("aardbei", 4, 0.1)
 
 def inkomsten_totaal(inkomsten,btw=0.09):
